@@ -1,6 +1,6 @@
 //--------------Business Logic--------------//
 
-//Empty <ul> and populate with new range
+//ForEach loop to put each array element as a list item
 var arrayToList = function(input) {
   input.forEach(function(element) {
     $("ul").append("<li>" + element + "</li>");
@@ -15,12 +15,19 @@ var pingPong = function(input) {
   if (input <= 0 || isNaN(input) === true) {
     $("#nonPositiveInteger").show();
   }
-  for (var index = 1; index <= input; index += 1) {
-    rangeArray.push(index);
+  else {
+    for (var index = 1; index <= input; index += 1) {
+      if ((index % 3) === 0) {
+        rangeArray.push("ping");
+      }
+      else {
+        rangeArray.push(index);
+      }
+    }
+    var listArray = arrayToList(rangeArray);
+    $("#rangeList").show();
+    return listArray;
   }
-  var listArray = arrayToList(rangeArray);
-  $("#rangeList").show();
-  return listArray;
 }
 
 
