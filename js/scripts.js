@@ -17,7 +17,10 @@ var pingPong = function(input) {
   }
   else {
     for (var index = 1; index <= input; index += 1) {
-      if ((index % 3) === 0) {
+      if ((index % 5) === 0) {
+        rangeArray.push("pong");
+      }
+      else if ((index % 3) === 0) {
         rangeArray.push("ping");
       }
       else {
