@@ -3,7 +3,7 @@
 
 //Main function that will call upon smaller functions above
 var pingPong = function(input) {
-  if (isNaN(input) === true) {
+  if (input <= 0 || isNaN(input) === true) {
     return "This is not a positive integer, please enter a positive integer and try again.";
   }
   else {
@@ -17,6 +17,7 @@ $(function() {
     event.preventDefault();
     var inputtedNumber = parseInt($("input#number").val());
     var result = pingPong(inputtedNumber);
-    $("#result").show(result);
+    $("#result").text(result);
+    $("#result").show();
   });
 });
