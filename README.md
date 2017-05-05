@@ -5,14 +5,14 @@
 
 ## User Story
 
-* This webpage with input an integer and output a range from 1 to the inputted number replacing integers divisible by 3 with "ping", integers divisible by 5 with "pong", and integers divisible by 15 with "ping-pong".
+* This webpage will input an integer and output a range from 1 to the inputted number, replacing integers divisible by 3 with "ping", integers divisible by 5 with "pong", and integers divisible by 15 with "ping-pong".
 
 
 ## Specs
 
 | Behavior | Example Input | Example Output |
 |:-------------:|:-------------:|:-------------:|
-| A non-integer input | -6 | "This is not a integer, please enter an integer and try again." |
+| A non-integer input | -6 | "This is not an integer, please enter an integer and try again." |
 | An integer that is not divisible by 3, 5, or 15 | 4 | 4 |
 | An integer that is divisible by 3 | 9 | "ping" |
 | An integer that is divisible by 5 | 20 | "pong" |
