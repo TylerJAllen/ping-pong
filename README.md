@@ -13,7 +13,7 @@
 | Behavior | Example Input | Example Output |
 |:-------------:|:-------------:|:-------------:|
 | A non-positive integer input | -6 | "This is not a positive integer, please enter a positive integer and try again." |
-| A positive integer that is not divisible by 3, 5, or 15 | 4 | <ul><li style="list-style-position:inside;">1</li><li style="list-style-position:inside;">2</li><li style="ist-style-position:inside;">3</li><li style="ist-style-position:inside;">4</li></ul> |
+| A positive integer that is not divisible by 3, 5, or 15 | 4 | <ul><li >1</li><li>2</li><li>3</li><li>4</li></ul> |
 | A positive integer that is divisible by 3 | 9 | "ping" |
 | A positive integer that is divisible by 5 | 20 | "pong" |
 | A positive integer that is divisible by 15 | 30 | "ping-pong" |
