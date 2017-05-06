@@ -1,3 +1,35 @@
+body {
+  background-color: #1d68c5;
+}
+
+.container-styles {
+  background-color: #FFFFFF;
+  border: 10px solid #000000;
+  margin-bottom: 30px;
+}
+
+.container-styles h1 {
+  color: #1d68c5;
+  font-weight: bolder;
+}
+
+#form-styles {
+  width: 50%;
+}
+
+.form-control {
+  border: none;
+}
+
+.panel {
+  width: 25%;
+}
+
+#results {
+  float: left;
+  width: 100%;
+}
+
 .result {
   display: none;
 }

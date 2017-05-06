@@ -10,17 +10,24 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping Pong</h1>
-      <form>
+      <div class="jumbotron container-styles">
+        <h1>Ping Pong</h1>
+      </div>
+      <form class="container-styles" id = "form-styles">
         <div class="form-control">
           <label for="number">Enter a positive number:</label>
           <input id="number" type="text" required>
         </div>
         <button type="submit" class="btn" name="button">Here we go!</button>
       </form>
-      <div id ="results">
-        <p class="result" id="nonPositiveInteger">This is not a positive integer, please try again.</p>
-        <ul class="result" id="rangeList"></ul>
+      <div class="panel container-styles">
+        <div class="panel-heading">
+          <h2 class="panel-title">Results:</h2>
+        </div>
+        <div class="panel-body container-styles" id ="results">
+          <p class="result" id="nonPositiveInteger">This is not a positive integer, please try again.</p>
+          <ul class="result" id="rangeList"></ul>
+        </div>
       </div>
     </div>
   </body>
